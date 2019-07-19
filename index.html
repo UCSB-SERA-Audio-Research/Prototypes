@@ -1,18 +1,21 @@
-<script type="module">
+<!---<script type="module">
     import { MidiParser } from './lib/midi-parser.js';
     window.MidiParser = MidiParser;
     var source = document.getElementById('MIDI');
     MidiParser.parse(source, function (obj) {
         readMIDI(obj);
     });
-</script>
+</script>-->
+<script src="./lib/midi-parser.js"></script>
 <script src="./lib/encode.js"></script>
 <script src="./lib/ffmpeg.js"></script>
-<script src="./lib/main.js"></script>
 <script src="./lib/notes.js"></script>
 <script src="./lib/read-midi.js"></script>
-<script src="./lib/index.js"></script>
+<script src="./lib/bundle.js"></script>
 <script src="./lib/web-audio.js"></script>
+<script src="./lib/index.js"></script>
+<script src="./lib/fft/real.js"></script>
+<script src="./lib/fft/complex.js"></script>
 <style>
     * {
         font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -26,7 +29,7 @@
     <input id="MIDI" type="file" name="file" />
     Audio File:
     <input id="AUDIO" type="file" name="file" />
-    <button onclick="run();" disabled>
+    <button onclick="run();">
         Run
     </button>
 </body>
