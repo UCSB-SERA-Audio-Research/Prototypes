@@ -27,8 +27,21 @@
 <body>
     MIDI File:
     <input id="MIDI" type="file" name="file" />
+    <br />
     Audio File:
     <input id="AUDIO" type="file" name="file" />
+    <br />
+    <input type="checkbox" class="live" checked>Live</input>
+    <br />
+    <input type="checkbox" class="length" checked>MIDI-Controlled Length</input>
+    <br />
+    <div class="delayControl">
+        Feedback: <input type="range" class="feedback" min="0" max="1" step="0.001" /><br />
+        Delay Time: <input type="range" class="delayTime" min="1" max="1000" step="0.001" /><br />
+        Wet Level: <input type="range" class="wetLevel" min="0" max="1" step="0.001" /><br />
+        Dry Level: <input type="range" class="dryLevel" min="0" max="1" step="0.001" /><br />
+    </div>
+    <br />
     <button onclick="run();">
         Run
     </button>
