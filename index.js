@@ -2,7 +2,7 @@ var express = require('express'),
     app = express();
 
 app.use("/lib", express.static("lib"));
-app.use("/tests", express.static("lib"));
+app.use("/tests", express.static("tests"));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
