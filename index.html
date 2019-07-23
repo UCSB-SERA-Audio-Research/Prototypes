@@ -31,14 +31,19 @@
     Audio File:
     <input id="AUDIO" type="file" name="file" />
     <br />
-    <input type="checkbox" class="live">Live</input>
-    <br />
     <input type="checkbox" class="length">MIDI-Controlled Length</input>
     <br />
+    Minimum Note Length:
+    <input type="range" class="minimum" min="0" max="1" step="0.001" value="0.25" /><br />
+    Maximum Note Length:
+    <input type="range" class="maximum" min="0" max="1" step="0.001" value="1" /><br />
+    Gain:
+    <input type="range" class="gain" min="0" max="1" step="0.001" value="1" /><br />
     Effect:
     <select id="effect">
         <option value="delay">Delay</option>
-        <option value="reverb" selected>Reverb</option>
+        <option value="reverb">Reverb</option>
+        <option value="none" selected>None</option>
     </select>
     <br />
     <div class="delayControl" hidden>
@@ -47,7 +52,7 @@
         Wet Level: <input type="range" class="wetLevel" min="0" max="1" step="0.001" /><br />
         Dry Level: <input type="range" class="dryLevel" min="0" max="1" step="0.001" /><br />
     </div>
-    <div class="reverbFile">
+    <div class="reverbFile" hidden>
         Reverb File:
         <input id="REVERB" type="file" name="file" />
     </div>
@@ -55,4 +60,8 @@
     <button onclick="run();">
         Run
     </button>
+    <button onclick="stop();">
+        Stop
+    </button>
+    <input type="checkbox" class="live">Live</input>
 </body>
