@@ -37,11 +37,11 @@
     <input type="checkbox" class="length">MIDI-Controlled Length</input>
     <br />
     Minimum Note Length:
-    <input type="range" class="minimum" min="0" max="1" step="0.001" value="0.25" /><br />
+    <input type="range" class="minimum sensorControllable" min="0" max="1" step="0.001" value="0.25" /><br />
     Maximum Note Length:
-    <input type="range" class="maximum" min="0" max="1" step="0.001" value="1" /><br />
+    <input type="range" class="maximum sensorControllable" min="0" max="1" step="0.001" value="1" /><br />
     Gain:
-    <input type="range" class="gain" min="0" max="1" step="0.001" value="1" /><br />
+    <input type="range" class="gain sensorControllable" min="0" max="1" step="0.001" value="1" /><br />
     Effect:
     <select id="effect">
         <option value="delay">Delay</option>
@@ -58,13 +58,13 @@
         <br />
     </span>
     <div class="delayControl" hidden>
-        Feedback: <input type="range" class="feedback" min="0" max="1" step="0.001" /><br />
-        Delay Time: <input type="range" class="delayTime" min="1" max="1000" step="0.001" /><br />
-        Wet Level: <input type="range" class="wetLevel" min="0" max="1" step="0.001" /><br />
-        Dry Level: <input type="range" class="dryLevel" min="0" max="1" step="0.001" /><br />
+        Feedback: <input type="range" class="feedback sensorControllable" min="0" max="1" step="0.001" /><br />
+        Delay Time: <input type="range" class="delayTime sensorControllable" min="1" max="1000" step="0.001" /><br />
+        Wet Level: <input type="range" class="wetLevel sensorControllable" min="0" max="1" step="0.001" /><br />
+        Dry Level: <input type="range" class="dryLevel sensorControllable" min="0" max="1" step="0.001" /><br />
     </div>
     <div class="distortionControl" hidden>
-        Multiplier: <input type="number" class="distortionValue number" min="0" step="1" value="3" /><br />
+        Multiplier: <input type="number" class="distortionValue number sensorControllable" min="0" step="1" value="3" /><br />
     </div>
     <div class="reverbFile" hidden>
         Impulse Response:
