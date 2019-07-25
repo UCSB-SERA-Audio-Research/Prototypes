@@ -92,6 +92,15 @@
     <div class="reverbFile" hidden>
         Impulse Response:
         <input id="REVERB" type="file" name="file" />
+        <span class="sensorControllable">
+            Low Cut:
+            <input type="number" class="lowCut number" min="0" step="1" max="0" value="0" />
+        </span>
+        <br />
+        <span class="sensorControllable">
+            High Cut:
+            <input type="number" class="highCut number" min="0" step="1" max="22030" value="22030" />
+        </span>
     </div>
     <br />
     <input type="checkbox" class="sensor">Sensor Input</input>
