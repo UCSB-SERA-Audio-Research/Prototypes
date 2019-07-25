@@ -59,13 +59,6 @@
         <option value="distortion">Distortion</option>
         <option value="none" selected>None</option>
     </select>
-    <br />
-    <input type="checkbox" class="sensor">Sensor Input</input>
-    <br />
-    <span class="sensorInfo" hidden>
-        Right-click on a slider or input field to select as the sensor target!
-        <br />
-    </span>
     <div class="delayControl" hidden>
         Feedback:
         <span class="sensorControllable">
@@ -100,6 +93,13 @@
         Impulse Response:
         <input id="REVERB" type="file" name="file" />
     </div>
+    <br />
+    <input type="checkbox" class="sensor">Sensor Input</input>
+    <br />
+    <span class="sensorInfo" hidden>
+        Right-click on a slider or input field to select as the sensor target!
+        <br />
+    </span>
     <br />
     <button onclick="run();">
         Run
