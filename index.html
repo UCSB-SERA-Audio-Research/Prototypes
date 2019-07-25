@@ -44,12 +44,12 @@
     <br />
     Maximum Note Length:
     <span class="sensorControllable">
-        <input type="range" class="maximum sensorControllable" min="0" max="1" step="0.001" value="1" />
+        <input type="range" class="maximum" min="0" max="1" step="0.001" value="1" />
     </span>
     <br />
     Gain:
     <span class="sensorControllable">
-        <input type="range" class="gain sensorControllable" min="0" max="1" step="0.001" value="1" />
+        <input type="range" class="gain" min="0" max="1" step="0.001" value="1" />
     </span>
     <br />
     Effect:
@@ -88,8 +88,8 @@
         </span>
         <br />
     </div>
-    <div class="distortionControl" hidden>
-        Multiplier: <input type="number" class="distortionValue number sensorControllable" min="0" step="1" max="100" value="3" /><br />
+    <div class="distortionControl sensorControllable" hidden>
+        Multiplier: <input type="number" class="distortionValue number" min="0" step="1" max="100" value="3" /><br />
     </div>
     <div class="reverbFile" hidden>
         Impulse Response:
